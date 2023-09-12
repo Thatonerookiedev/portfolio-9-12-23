@@ -1,0 +1,98 @@
+
+
+
+.works{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+        .main{
+            flex: 1;
+            display: flex;
+            max-height: none;
+                .con{
+                    flex: 1;
+                    position: relative;
+                        &:nth-child(1){
+                            display: none;
+                                .logo{
+                                    width: auto;
+                                    height: 5rem;
+                                    position: absolute;
+                                    bottom: 10%;
+                                }
+                                .dots{
+                                    width: auto;
+                                    height: 4rem;
+                                    position: absolute;
+                                    top: 20%;
+                                    left: 40%;
+                                }
+                                .dots2{
+                                    width: auto;
+                                    height: 4rem;
+                                    position: absolute;
+                                    right: 0rem;
+                                    top: 50%;
+                                }
+                        }
+                        &:nth-child(2){
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-content: center;
+                            min-width: 70%;
+                                .skillcon{
+                                    width: max-content;
+                                    max-width: 7rem;
+                                    height: max-content;
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    max-height: none;
+                                    border: 1px solid black;
+                                    border-radius: 5px;
+                                    font-size: 0.8rem;
+                                    font-weight: bold;
+                                    margin-left: 0.5rem;
+                                    margin-top: 1rem;
+                                        .title{
+                                            padding: 0.3rem 0.5rem;
+                                            border-bottom: 1px solid black;
+                                        }
+                                        .skillsmaincon{
+                                            flex: 1;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                                .skill{
+                                                    margin-left: 0.2rem;
+                                                }
+                                        }
+                                }
+                        }
+                        @media (max-width:570px) {
+                            &:nth-child(1){
+                                display: none;
+                            }
+                            &:nth-child(2){
+                                width:100%
+                            }
+                        }
+                }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+
+
+@use '../variables/colors' as *;
+
+
+.home{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow-x: hidden;
+        .seccondaryCon{
+            flex: 1;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            padding-right: 2rem;
+                .title{
+                    .different{
+                        color: $primarycolor;
+                    }
+                }
+                .smallp{
+                    margin-top: 1rem;
+                    font-size: 0.8rem;
+                }
+                .link{
+                    cursor: pointer;
+                    user-select: none;
+                    padding: 0.5rem;
+                    border: 1px solid $primarycolor;
+                    width: max-content;
+                    border-radius: 5px;
+                    margin-top: 1rem;
+                    font-size: 0.7rem;
+                }
+        }
+        .right{
+            background-color: $seccodarygbcolor;
+            display: flex;
+            justify-content: center;
+            align-content: end;
+            flex-wrap: wrap;
+            position: relative;
+            overflow-x: visible;
+                .woman{
+                    height: 20rem;
+                    width: auto;
+                    margin-bottom: 2rem;
+                    z-index: 10;
+                }
+                .title{
+                    width: max-content;
+                    min-width: 60%;
+                    justify-self: center;
+                    height: max-content;
+                    padding: 0.5rem;
+                    border: 1px solid black;
+                    background-color: inherit;
+                    border-radius: 5px;
+                    font-size: 0.7rem;
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: row;
+                    font-weight: 600;
+                        .circle{
+                            width: 0.8rem;
+                            height: 0.8rem;
+                            border-radius: 50%;
+                            background-color: $primarycolor;
+                            display: block;
+                            align-self: center;
+                            margin-right: 0.3rem;
+                        }
+                }
+                .square{
+                    position: absolute;
+                    z-index: 5;
+                    bottom: 6rem;
+                    align-self: center;
+                    margin-left: 15rem;
+                }
+                .logo{
+                    position: absolute;
+                    z-index: 5;
+                    top: 4rem;
+                    align-self: center;
+                    margin-right: 10rem;
+                    height: 10rem;
+                    width: auto;
+                }
+                @media (max-width:656px) {
+                    .logo{
+                        margin-right: 9rem;
+                        height: 9rem;
+                        top: 7rem;
+                    }
+                    .woman{
+                        height:18rem
+                    }
+                }
+                @media (max-width:510px) {
+                    &{
+                        display: none;
+                    }
+                }
+        }
+}
+
+
+.quote2{ 
+    max-width: 80%;
+    min-width: none;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-self: center;
+    padding: 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 2rem;
+    position: relative;
+        .author{
+            margin-left: 0.2rem;
+        }
+        .quoteImage{
+            position: absolute;
+            height: 1.5rem;
+            width: auto;
+                &:nth-child(2){
+                    top:-0.7rem;
+                    left: -0.7rem;
+                }
+                &:nth-child(3){
+                    bottom:-0.7rem;
+                    right: -0.7rem;
+                }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+

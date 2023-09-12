@@ -1,0 +1,78 @@
+
+
+
+.contact{
+    .maincon2{
+        width:100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 0;
+            .par{
+                width: 50%;
+                justify-self: start;
+                position: relative;
+                left: 0;
+            }
+            .contactinfo{
+                position: relative;
+                padding: 0.5rem;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-self: end;
+                border: 1px solid black;
+                height: max-content;
+                width: max-content;
+                margin-left: auto;
+                    .title{
+                        text-align: center;
+                    }
+                    .info{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        height: max-content;
+                        justify-content: center;
+                        margin-top: 0.2rem;
+                            .icon{
+                                width: auto;
+                                height: 1.2rem;
+                                margin-right: 0.2rem;
+                            }
+                    }
+            }
+            @media (max-width:662px) {
+                &{
+                    flex-direction: column;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    height: max-content;
+                    padding: 1rem 0;
+                        .contactinfo{
+                            justify-self: center;
+                            position: relative;
+                            margin: 0 auto;
+                        }
+                        .par{
+                            width: 100%;
+                            margin: 1rem auto;
+                            top: 0;
+                        }
+                }
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

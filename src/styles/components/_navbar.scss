@@ -1,0 +1,51 @@
+
+@use '../variables/colors' as *;
+
+
+.navbar{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background-color: $seccodarygbcolor;
+    z-index: 100;
+        .logo{
+            height: 1rem;
+            width: auto;
+            user-select: none;
+        }
+        .links{
+            margin-left: auto;
+            min-width: 1rem;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            font-weight: normal;
+            font-size: 0.7rem;
+                .link{
+                    cursor: pointer;
+                    margin-left: 1rem;
+                    user-select: none;
+                        .hashtag{
+                            color: $primarycolor;
+                        }
+                }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
